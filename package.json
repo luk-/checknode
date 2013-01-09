@@ -22,6 +22,9 @@
     "name": "Luke Arduini",
     "email": "luke.arduini@me.com",
     "url": "http://luke.xxx"
-    },
-  "license": "MIT"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "semver": "1.1.2"
+  }
 }
