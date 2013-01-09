@@ -12,9 +12,9 @@ Supports looking for versions 0.5.1 and up.
 
 #### Usage:
 
-`var checknode = require('checknode')`
-
 ```javascript
+var checknode = require('checknode')
+
 checknode('0.8.4', function (err, res) {
   if (!err) {
     res === 200 && console.log('version exists')
