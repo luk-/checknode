@@ -1,10 +1,10 @@
 #checknode
 
-[![Build Status](https://secure.travis-ci.org/st-luke/osconfig.png)](http://travis-ci.org/st-luke/osconfig)
+[![Build Status](https://secure.travis-ci.org/st-luke/checknode.png)](http://travis-ci.org/st-luke/checknode)
 
 Check to see if a .tar.gz of the node source you want exists on the official website.
 
-Supports versions 0.5.1 and up.
+Supports looking for versions 0.5.1 and up.
 
 #### Installation:
 
@@ -15,9 +15,11 @@ Supports versions 0.5.1 and up.
 `var checknode = require('checknode')`
 
 ```javascript
-checknode('0.8.4', function (res) {
-  if (err) return console.log(err)
-  console.log(res)
+checknode('0.8.4', function (err, res) {
+  if (!err) {
+    res === 200 && console.log('version exists')
+    res === 404 && console.log('version does not exist')
+  }
 })
 ```
 
