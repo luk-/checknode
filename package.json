@@ -1,0 +1,27 @@
+{
+  "name": "checknode",
+  "version": "0.0.1",
+  "description": "check if a node tarball exists on the official website",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:st-luke/checknode.git"
+  },
+  "keywords": [
+    "check",
+    "exists",
+    "tarball"
+  ],
+  "author": {
+    "name": "Luke Arduini",
+    "email": "luke.arduini@me.com",
+    "url": "http://luke.xxx"
+    },
+  "license": "MIT"
+}
